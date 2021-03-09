@@ -161,32 +161,6 @@ const onSuccessDaily = (response) => {
 
 }
 
-// const onSuccessDaily = (response) => {
-//     console.log(response)
-//     let data = response.daily;
-//     let main_weather = document.getElementById("main-dailyweather");
-//     main_weather.innerHTML = '';
-//     let div = document.createElement('div');
-//     div.className = "row col s12";
-//     for (let i=1; i< data.length-1; i++){
-//         let divInside = document.createElement('div');
-//         divInside.className = "col s2 center-align light-blue lighten-3";
-//         divInside.setAttribute("style", "border: 3px solid white;");
-//         let html  = '';
-//         html += '<p>'+ new Date(data[i].dt*1000).toDateString() +'</p>';
-//         html += showIcon(data[i].weather[0].icon);
-//         html += '<p  class="infor-1-wt"> '+ Math.round(data[i].temp.day) +'°F</p>';
-//         html += '<p  class="infor-2-wt"> H: '+ Math.round(data[i].temp.max) + '°F - L: '+ Math.round(data[i].temp.min) + '°F</p>';
-//         html += '<p class="infor-3-wt"> '+ data[i].weather[0].main +'</p>';
-//         html += '<p class="infor-3-wt"> Humidity: '+ data[i].humidity +' %</p>';
-//         html += '<p class="infor-3-wt"> Wind: '+ Math.round(data[i].wind_speed) +' mph</p>';
-//         divInside.innerHTML = html;
-//         div.appendChild(divInside);
-//     }
-//     main_weather.appendChild(div);
-//
-//
-// }
 
 const get = async (url) => {
     return new Promise(function (resolve, reject){
