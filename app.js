@@ -34,7 +34,7 @@ const renderLocation = (data) => {
 }
 
 const getLongitudeLatitude = async (zipcode) => {
-    let url = 'http://api.openweathermap.org/geo/1.0/zip?zip='+zipcode+',us&appid='+APIKEY;
+    let url = 'https://api.openweathermap.org/geo/1.0/zip?zip='+zipcode+',us&appid='+APIKEY;
     try {
         let data = await get(url);
         renderLocation(data);
